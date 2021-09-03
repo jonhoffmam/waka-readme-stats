@@ -294,7 +294,7 @@ def generate_commit_list(tz):
 def get_waka_time_stats():
     stats = ''
     request = requests.get(
-        f"https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key={waka_key}")
+        f"https://wakatime.com/api/v1/users/current/stats/last_year?api_key={waka_key}")
     no_activity = translate["No Activity Tracked This Week"]
 
     if request.status_code == 401:
